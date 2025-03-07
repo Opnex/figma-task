@@ -110,17 +110,12 @@ body {
 }
 .ass {
     display: flex;
+    flex-wrap: wrap;
     width: 90%;
     margin: 10px auto;
     display: flex;
     align-items: center;
-}
-.ass2 {
-    display: flex;
-    width: 90%;
-    margin: 10px auto;
-    display: flex;
-    align-items: center;
+    justify-content: center;
 }
 .ass-div {
     /* border: 2px solid red;  */
@@ -146,19 +141,23 @@ body {
 }
 .button2 button {
     background-color: rgb(14, 14, 46);
-    padding: 12px 100px 12px 100px;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    gap: 5px;
+    text-align: center;
+    justify-content: center;
     color: #fff;
     /* border-radius: 10px;  */
 }
 
 
 .sub-con3 {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     background-color: #fff;
     width: 100%;
     margin: 10px auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
 }
 .sub-con3 h2 {
     text-align: center;
@@ -168,5 +167,7 @@ body {
 .sub-con3 p {
     text-align: start;
     font-size: 20px;
+    padding: 30px;
+    margin-top: 5px;
 }
 
