@@ -16,6 +16,8 @@ body {
 }
 .sub-con1 {
     /* border: 2px solid red; */
+    background-image: url(/images/nav-background.png);
+    background-repeat: no-repeat;
     width: 100%;
     margin: 10px auto;
 }
@@ -40,6 +42,8 @@ body {
 }
 .nav-pic2 p {
     line-height: 1px;
+    font-size: 11px;
+    color: #759cb1;
 }
 
 .list ul {
@@ -48,15 +52,15 @@ body {
     justify-content: end;
 }
 .list li {
-    padding: 15px;
+    padding: 3px 10px 3px 10px  ;
     display: inline-block;
 
 }
 .log {
     background-image: linear-gradient(#24617D, #4A7C97);
+    color: #fff;
     margin-right: 10px;
-    padding: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
 
 }
 .list li:hover {
@@ -81,13 +85,13 @@ body {
     color: #24617D;
 }
 .button {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .button button {
     background-color:#24617D;
-    padding: 10px;
+    padding: 7px 15px 7px 15px;
     color: #fff;
-    border-radius: 10px; 
+    border-radius: 5px; 
     
 }
 .nav2-pic {
@@ -173,9 +177,75 @@ body {
 }
 
 .sub-con4 {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     background-color: #054866;
-    padding: 20px 100px 20px 100px;
+    padding: 40px 100px 30px 100px;
     color: #fff;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.flex1 {
+    color: #b7c9d2;
+    font-size: 13px;
+    margin-top: 30px;
+}
+.flex2 {
+    color: #b7c9d2;
+    font-size: 13px;
+    line-height: 1.7rem;
+}
+.flex1b {
+    display: flex;
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 10px;
+    align-items: center;
+    gap: 3px;
+}
+.flex-img {
+    width: 15px;
+    height: 15px;
+}
+.flex3 {
+    /* border: 2px solid red; */
+    text-align: center;
+    color: #b7c9d2;;
+    font-size: 13px;
+    margin-top: 40px;
+    margin-bottom: -30px;
+}
+.flex1 .white {
+    /* border: 2px solid red; */
+    background: #fff;
+    color: #054866;
+    font-weight: bolder;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+} 
+
+@media screen and (max-width:600px) {
+    .main-section {
+        width: 100%;
+    }
+    .sub-con1 {
+        width: 100%;
+    }
+    .sub-con2 {
+        width: 100%;
+    }
+    .ass {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .sub-con3 {
+        width: 100%;
+    }
+    .sub-con4 {
+        width: 100%;
+    }
 }
 
