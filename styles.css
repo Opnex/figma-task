@@ -298,8 +298,6 @@ body {
         margin-right: 5px;
     } */
 
-
-
     .bar{
         width: 100%;
         display: flex;
@@ -345,8 +343,11 @@ body {
     .nav-pic2 {
         margin-left: -20px;
     }
-
-
+    .log-div {
+        display: flex;
+        flex-direction: column;
+        line-height: 3rem;
+    }
 
     .nav2 {
         width: 90%;
