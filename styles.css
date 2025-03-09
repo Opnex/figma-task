@@ -21,6 +21,9 @@ body {
     width: 100%;
     margin: 1px auto;
 }
+.bar {
+    display: none;
+}
 .nav {
     width: 90%;
     padding: 20px;
@@ -61,10 +64,9 @@ body {
 }
 .log {
     background-image: linear-gradient(#24617D, #4A7C97);
-    color: #fff;
     margin-right: 10px;
     border-radius: 5px;
-
+    padding: 10px;
 }
 .list li:hover {
     border-bottom:4px solid #24617D;
@@ -252,6 +254,7 @@ body {
     text-align: center;
 }
 
+/* Mobile responsive */
 @media screen and (max-width:600px) {
     .main-section {
         width: 100%;
@@ -259,7 +262,13 @@ body {
     .sub-con1 {
         width: 100%;
     }
+
     .nav {
+        display: none;
+    }
+
+    /* .nav {
+        display: none;
         width: 100%;
         margin: auto;
         padding: 0px;
@@ -287,7 +296,58 @@ body {
     .log {
         background-color: none;
         margin-right: 5px;
+    } */
+
+
+
+    .bar{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
     }
+    .bar .img1 {
+        width: 100px;
+    }
+    .bars .img2 {
+        width: 60px;
+        margin-right: 10px;
+        margin-top: 5px;
+    }
+    .bars{
+        position: relative;
+    }
+    .bar-list{
+        /* background-color: #002aff; */
+        padding: 20px;
+        position: absolute;
+        top: 0;
+        left: -55px;
+        display: none;
+    }
+    .bars:hover .bar-list{
+        display: block;
+    }
+    .bar-list ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        list-style-type: none;
+    }
+    .bar-list a {
+        text-decoration: none;
+    }
+    .screen {
+        display: flex;
+        align-items: center;
+    }
+    .nav-pic2 {
+        margin-left: -20px;
+    }
+
+
+
     .nav2 {
         width: 90%;
         margin: 10px auto;
@@ -369,9 +429,8 @@ body {
     
 }
 
-
+/* tablet responsive */
 @media screen and (max-width:800px) {
-    /* styles for tablets go here */
     .main-section {
         width: 100%;
     }
@@ -381,31 +440,32 @@ body {
     .nav {
         width: 100%;
         margin: auto;
-        padding: 0px;
+        padding: 10px;
     }
     .nav-pic {
         display: flex;
-        gap: 40px;
+        gap: 80px;
     }
     .nav-pic1 img {
-        width: 80px;
+        width: 130px;
         margin-left: -10px;
     }
     .nav-pic2 h1 {
-        font-size: 15px;
+        font-size: 30px;
     }
     .nav-pic2 p {
         line-height: 1px;
-        font-size: 5px;
+        font-size: 10px;
     }
     .list li {
-        font-size: 10px;
-        padding: 1px 1px 1px 1px  ;
+        font-size: 17px;
+        padding: 5px 5px 5px 5px  ;
         display: inline-block;
     }
     .log {
         background-color: none;
         margin-right: 5px;
+        padding: 10px;
     }
     .nav2 {
         width: 90%;
